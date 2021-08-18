@@ -21,7 +21,7 @@ const enhancer = composeEnhancers(
   applyMiddleware(...middlewares),
   // other store enhancers if any
 )
-
+//redux的中间件redux-thunk
 export default function configStore () {
   const store = createStore(rootReducer, enhancer)
   return store
